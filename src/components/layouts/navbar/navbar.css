@@ -1,0 +1,70 @@
+/* Contenedor principal de la barra de navegación */
+.navbar-header {
+  background-color: rgb(127, 255, 212);
+  display: flex;
+  justify-content: center; /* Centra el contenido dentro del header */
+  padding: 10px 150px; /* Menos espaciado arriba y abajo, más espaciado a los lados */
+}
+/* Contenedor de la barra de navegación que incluye el logo, nav y carrito */
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Distribuye el contenido entre los extremos */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  max-width: 1200px; /* Limita el ancho máximo de la barra */
+}
+
+/* Estilo del logo */
+.logo {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fa0000; /* Color rojo para el logo */
+  text-align: left; /* Alinea el texto del logo a la izquierda */
+  margin: 0; /* Elimina el margen por defecto */
+  padding: 20px 30px;
+}
+
+/* Contenedor de categorías (elementos de la barra de navegación) */
+.category-container {
+  display: flex;
+  justify-content: center; /* Centra los botones de categoría en el medio */
+  gap: 20px; /* Espaciado entre los elementos de la lista */
+  list-style-type: none; /* Elimina los puntos de lista */
+  margin: 0;
+  padding: 0;
+  flex-grow: 1; /* Hace que ocupe el espacio restante */
+  text-align: center; /* Centra el texto de los elementos */
+}
+
+/* Estilo de los elementos de la categoría */
+.category-container li {
+  cursor: pointer; /* Cambia el cursor cuando pasas sobre los elementos */
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease; /* Transición suave al cambiar el color */
+}
+
+/* Efecto hover sobre los elementos de la lista */
+.category-container li:hover {
+  color: #007bff; /* Cambia el color del texto al pasar el ratón */
+}
+
+/* Estilo del carrito de compras */
+.shopcart-container {
+  display: flex;
+  justify-content: flex-end; /* Alinea el carrito a la derecha */
+  align-items: center; /* Centra el carrito verticalmente */
+}
+
+/* Estilo adicional si es necesario para ShopCart */
+.shopcart-container svg {
+  font-size: 24px; /* Tamaño del icono del carrito */
+  color: #333; /* Color del icono */
+  cursor: pointer; /* Cambio de cursor al pasar sobre el carrito */
+}
+
+/* Estilo opcional para el ShopCart en hover */
+.shopcart-container svg:hover {
+  color: #007bff; /* Color del icono al pasar el ratón */
+}
